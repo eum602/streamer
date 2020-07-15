@@ -6,7 +6,13 @@ JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 && ./gradlew clean shadowJar
 ./gradlew clean
 ./gradlew shadowJar
 ```
+## Create the tracks folder
+```shell script
+$ mkdir tracks
+```
+* Paste some files to pull via http.
 
+## Running with gradle
 Because the application plugin is being used, you may directly run the application:
 
 ```shell script
@@ -27,4 +33,4 @@ docker build -t eumb602/streamer:0.0.1 .
 $ docker-compose up --build -d
 ```
 ### Downloading files
-curl -o out.mp3 http://localhost:8080/download/YuriBuenaventura-ValledeRosas.mp3
+curl -o name.mp3 http://localhost:8080/download/YuriBuenaventura-ValledeRosas.mp3
