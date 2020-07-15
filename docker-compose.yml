@@ -1,0 +1,10 @@
+version: '3.0'
+
+services:
+  streamer:
+    image: eumb602/streamer:0.0.1
+    restart: always
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./tracks:/usr/apps/tracks
